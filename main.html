@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Weather API</h1>
+    <div class="container">
+        <h1>Current Weather</h1>
+        <p>Get real-time weather data for London.</p>
 
-    <button id="getWeatherButton">Get Current Weather</button>
+        <button id="getWeatherButton">Get Current Weather</button>
 
-    <div id="weatherData"></div>
+        <div id="weatherData" class="weather-info">
+            </div>
 
-    <h2>Instructions</h2>
-    <ol>
-        <li>Create a button with the text as <span class="highlight">Get Current Weather</span></li>
-        <li>On click of the button, get the weather data for <span class="highlight">London</span></li>
-        <li>Update the div with the <code>id</code> as <code>weatherData</code> in the following format: Current weather in London: Clouds</li>
-    </ol>
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Click the "Get Current Weather" button.</li>
+                <li>The application fetches weather data for London.</li>
+                <li>The weather details will be displayed below.</li>
+            </ol>
+        </div>
 
-    <h3>API to use</h3>
-    <a href="https://openweathermap.org/api" target="_blank">https://openweathermap.org/api</a>
+        <div class="api-info">
+            <h3>API Used:</h3>
+            <a href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">OpenWeatherMap API</a>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
