@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-   <h1>Weather Application</h1>
-    <button id="getWeatherBtn">Get Current Weather</button>
+    <h1>Weather API</h1>
+
+    <button id="getWeatherButton">Get Current Weather</button>
+
     <div id="weatherData"></div>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
 
+    <h2>Instructions</h2>
+    <ol>
+        <li>Create a button with the text as <span class="highlight">Get Current Weather</span></li>
+        <li>On click of the button, get the weather data for <span class="highlight">London</span></li>
+        <li>Update the div with the <code>id</code> as <code>weatherData</code> in the following format: Current weather in London: Clouds</li>
+    </ol>
+
+    <h3>API to use</h3>
+    <a href="https://openweathermap.org/api" target="_blank">https://openweathermap.org/api</a>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
